@@ -4,14 +4,119 @@
 }
 
 .titulo{
-    background-image: url();
-    justify-content: center;
+    background-image: url(../assets/imagenes/imgPactTuristicas.png);
+
     width: 100%;
-    height: 500px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .logo_titulo{
     display: flex;
     align-items: center;
-    margin-left:300px;
+    justify-content: center;
+    color: white;
+
 }
+.logo_titulo h2{
+    padding-left: 50px;
+}
+.qPaginaes{
+    justify-content: center;
+    color: white;
+    display: flex;
+    margin-top: 100px;
+}
+.menu{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #010B40;
+    height: 80px;
+}
+
+.menu ul{
+    width: 100%;
+}
+.menu ul li{
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #3B83D5;
+}
+#grid-container{
+    display: grid;
+    background-color:transparent;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:  
+    'sobreact'
+    'act1'
+    'act2'
+    'act3';
+    height: 2150px;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    margin: 10px 80% 5px 20% ;
+    width: 60%;
+    align-items: center;
+/*     background-color:#3B83D5 ; */
+    font-size: 20px;
+
+}
+#sobreact{
+    grid-area: sobreact;
+    color:black;
+    margin-left: 2%;
+}
+#senderismo{
+    grid-area: act1;
+    color:black;
+    margin-left: 2%;
+
+}
+#avistaje{
+    grid-area: act2;
+    color:black;
+    margin-left: 2%;
+
+}
+#excurciones_nauticas{
+    grid-area: act3;
+    color:black;
+    margin-left: 2%;
+
+}
+.parrafo{
+    margin-top: 50px;
+}
+.imagen{
+    width: 750px;
+    margin-top:50px;
+    view-timeline-name: --image ;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+       opacity: 1; 
+       scale: 100%;
+    }
+}
+
