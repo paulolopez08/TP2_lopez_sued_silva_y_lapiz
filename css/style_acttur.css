@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    background-image: url();
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+
+}
+.logo_titulo{
+    display: flex;
+    align-items: center;
+    margin-left:300px;
+}
