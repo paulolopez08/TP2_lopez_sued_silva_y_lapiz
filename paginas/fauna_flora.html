@@ -8,6 +8,34 @@
     <link rel="shortcut icon" href="..//assets/imagenes/escudo_isla_pingüino.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Hola mundo!!!</h1>
+    <header>
+        <div class="titulo">
+            <div class="logo_titulo">
+                <img src="../assets/imagenes/escudo_isla_pingüino.png" alt="escudo isla pinguinos">
+                <h2>Parque Interjurisdiccional Marino Isla Pingüino</h2>
+            </div>
+            <div class="qPaginaes"><h1>flora y fauna</h1></div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="fauna_flora.html">actividades turísticas</a></li>
+                <li><a href="">actividades</a></li>
+                <li><a href="">fotos</a></li>
+                <li><a href="">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="assets/imagenes/5.jpg" alt="Imagen 1">
+            <img src="assets/imagenes/pajaro.jpg" alt="Imagen 2">
+            <img src="assets/imagenes/Slider-lobomarinp.jpg" alt="Imagen 3">
+            <img src="assets/imagenes/tipos-calamares.jpeg" alt="Imagen 4">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
