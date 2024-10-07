@@ -54,27 +54,46 @@
     color: #3B83D5 ;
 }
 
-#grid_container{
+#grid-container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1.5fr 1fr 1fr;
-    grid-area: 
-    'desc ft1'
-    'ubi ir';
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1.5fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'desc img'
+        'mapa ir'
+        'mapa ir'
+        'obj obj'
+        'turismo turismo';
+
+    height: 800px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
 }
 
-#descripcion{
+.descrip{
+    
     grid-area: desc;
 }
 
-#f1{
-    grid-area: ft1;
+.imagen{
+    grid-area: img;
 }
 
-#ubicacion{
-    grid-area: ubi;
+.ubicacion{
+
+    grid-area: mapa;
 }
 
-#como_llegar{
+.ir{
     grid-area: ir;
+}
+
+.objetivo{
+    grid-area: obj;
+}
+
+.turismo{
+    grid-area: turismo;
 }
