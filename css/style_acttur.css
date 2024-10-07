@@ -179,12 +179,16 @@
 .redes{
     display: flex;
     text-align: center;
+
 }
 
 .redes img{
     width: 50px;
     height: auto;
     margin-right: 10px;
+}
+.redes a{
+    text-decoration: none;
 }
 
 #foot_grid-container{
@@ -198,12 +202,13 @@
     'mail tele menu'
     'telefon e menu';
     height: 220px;
-    grid-column-gap: 0px;
+    grid-column-gap: 20px;
     grid-row-gap: 0px;
 /*     margin: 10px 80% 5px 20% ; */
     width: 100%;
     align-items: center;
 /*     background-color:#3B83D5 ; */
+    margin-top: 50px;
 }
 
 #ig{
@@ -226,4 +231,28 @@
 }
 #telefono{
     grid-area: telefon;
+}
+#menu_footer{
+    grid-area: menu;
+}
+
+#menu_footer{
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+#menu_footer ul{
+    width: 100%;
+}
+#menu_footer ul li{
+    display:block;
+    width: 10%;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+#menu_footer ul li a{
+    text-decoration: none;
 }
