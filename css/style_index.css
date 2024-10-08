@@ -60,41 +60,38 @@ body{
 #grid-container{
     display: grid;
     background-color: rgb(255, 255, 255);
-    grid-template-columns: 1.5fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-areas: 
-        'desc img'
-        'mapa ir'
+        'desc desc'
         'mapa ir'
         'obj obj'
         'turismo turismo';
 
     height: 800px;
-    grid-column-gap: 10px;
+    grid-column-gap: 40px;
     grid-row-gap: 10px;
-    
+    margin: 5% 10% 5% 10%;
+    font-size: 17px;
 }
 #descrip{
     
     grid-area: desc;
 }
 
-#imagen{
-    grid-area: img;
-}
 
 #ubicacion{
 
     grid-area: mapa;
 }
 
-#ir{
+#ir{    
     grid-area: ir;
-    
 }
 
 #objetivo{
     grid-area: obj;
+   
 }
 
 #turismo{
@@ -103,5 +100,6 @@ body{
 
 #mapa{
     height: 80%;
+    border-radius: 30px 30px 30px 30px;
     width: 100%;
 }
