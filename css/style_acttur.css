@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+/* body{
+    background-color: #BCAC95  ;
+}
+ */
 .titulo{
     background-image: url(../assets/imagenes/imgPactTuristicas.png);
 
@@ -128,29 +131,35 @@
     height: 100%;
 }
 
-.slider-box{
+#slider-box{
     width: 50%;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
     margin-top: 50px ;
+    justify-content: center;
 
 }
-.slider-box ul{
+#slider-box ul{
     display: flex;
     padding: 0;
     width: 400%;
     animation: slide 20s infinite ease-in-out;
 }
 
-.slider-box li{
+#slider-box li{
     width: 100%;
     list-style: none;
     position: relative;
 
 }
-.slider-box img{
+#slider-box img{
     width: 100%;
+}
+
+#titulo_fotos{
+    margin-bottom: 30 px;
+    justify-content: center;
 }
 
 @keyframes slide{
@@ -175,6 +184,10 @@
         width: 100%;
     }
 }
+/*S
+footer{
+    background-color: #746256 ;
+} */
 
 .redes{
     display: flex;
@@ -255,4 +268,13 @@
 
 #menu_footer ul li a{
     text-decoration: none;
+}
+
+.derechos{
+    background-color:#3B83D5;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 98%;
 }
