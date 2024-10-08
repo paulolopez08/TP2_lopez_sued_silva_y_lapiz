@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
 }
-/* body{
-    background-color: #BCAC95  ;
-}
- */
+ body{
+/*     background-color: #2175BF  ; */
+
+} 
+ 
 .titulo{
     background-image: url(../assets/imagenes/imgPactTuristicas.png);
 
@@ -20,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white  ;
 
 }
 .logo_titulo h2{
@@ -76,10 +77,14 @@
     font-size: 20px;
 
 }
+
 #sobreact{
     grid-area: sobreact;
     color:black;
     margin-left: 2%;
+}
+#sobreact{
+    color: #010B40;
 }
 #senderismo{
     grid-area: act1;
@@ -151,7 +156,7 @@
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite ease-in-out;
+    animation: slide 10s infinite ease-in-out;
 }
 
 #slider-box li{
@@ -192,14 +197,14 @@
         width: 100%;
     }
 }
-/*
+
 footer{
-    background-color: #746256 ;
-} */
+    background-color: #2175BF ;
+}
 
 .redes{
     display: flex;
-    text-align: center;
+    align-items: center;
 
 }
 
@@ -210,12 +215,13 @@ footer{
 }
 .redes a{
     text-decoration: none;
+    color: black;
 }
 
 #foot_grid-container{
     display: grid;
     background-color:transparent;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:  
     'ig x menu'
@@ -229,7 +235,7 @@ footer{
     width: 100%;
     align-items: center;
 /*     background-color:#3B83D5 ; */
-    margin-top: 50px;
+
 }
 
 #ig{
@@ -276,6 +282,7 @@ footer{
 
 #menu_footer ul li a{
     text-decoration: none;
+    color: black;
 }
 
 .derechos{
@@ -286,4 +293,10 @@ footer{
     bottom: 0;
     width: 98.5%;
     font-size: 15px;
+}
+#gradient{
+    height: 100px;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, white, #2175BF);
 }
