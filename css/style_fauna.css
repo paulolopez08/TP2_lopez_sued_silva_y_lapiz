@@ -4,7 +4,7 @@
 }
 
 .titulo{
-    background-image: url(../assets/imagenes/imgPactTuristicas.png);
+    background-image: url(../assets/imagenes/Slider-lobomarinp.jpg);
 
     width: 100%;
     height: 400px;
@@ -57,6 +57,35 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#grid-container{
+    display: grid;
+    background-color:transparent;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    'slider-box'
+    'texto1'
+    'slider-box2'
+    'texto2';
+    height: 1000px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto1{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px ;
+}
+
+.texto2{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px ;
+}
 
 .img_carrusel{
     width: 800px;
@@ -67,6 +96,7 @@ body {
     height: auto;
     overflow: hidden;
     margin-top: 50px ;
+    align-items: start;
 
 }
 .slider-box ul{
@@ -84,6 +114,7 @@ body {
 }
 .slider-box img{
     width: 100%;
+    height: 100%;
 }
 
 @keyframes slide{
@@ -105,6 +136,59 @@ body {
         padding: 30px;
     }
     .slider-box{
+        width: 100%;
+    }
+}
+
+.img_carrusel{
+    width: 800px;
+}
+
+.slider-box2{
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px ;
+
+}
+.slider-box2 ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite ease-in-out;
+    align-items: end;
+}
+
+.slider-box2 li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+}
+.slider-box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .slider-box2{
         width: 100%;
     }
 }
