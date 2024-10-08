@@ -6,6 +6,7 @@
 /*     background-color: #2175BF  ; */
 
 } 
+
  
 .titulo{
     background-image: url(../assets/imagenes/imgPactTuristicas.png);
@@ -236,6 +237,7 @@ footer{
     width: 100%;
     align-items: center;
 /*     background-color:#3B83D5 ; */
+    background-color: #2175BF
 
 }
 
@@ -305,7 +307,6 @@ footer{
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #foot_grid-container{
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
-        grid-template-columns: 1fr;
         grid-template-areas:
         'ig'
         'x'
@@ -316,6 +317,37 @@ footer{
         'telefon'
         'menu';
         height: 600px;
+        width: 710px;
+
+    }
+    #slider-box{
+        width: 700px;
+
+    }
+    header{
+        width: 710px;
+    }
+    .menu{
+        height: 150px;
+    }
+    #gradient{
+        width: 710px;
+    }
+    .derechos{
+        width: 690px;
+    } 
+    #grid-container{
+        width: 700px;
+        margin-left: 0;
+    }
+    .menu ul li{
+        display: block;
+    }
+    .menu ul{
+        justify-self: center;
+    }
+    .imagen{
+        width: 700px;
     }
 
 
