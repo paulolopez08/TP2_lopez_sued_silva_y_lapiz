@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .titulo{
     background-image: url(../assets/imagenes/imagenisla.jpg);
 
@@ -40,6 +41,7 @@
 
 .menu ul{
     width: 100%;
+    position: center;
 }
 .menu ul li{
     display: inline-block;
@@ -54,52 +56,325 @@
     color: #3B83D5 ;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.3;
+    background-color: #5c84aa;
 }
 
 #grid-container{
     display: grid;
-    background-color: rgb(255, 255, 255);
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-areas: 
         'desc desc'
         'mapa ir'
         'obj obj'
-        'turismo turismo';
+        'turismo carrosa';
 
-    height: 800px;
+    height: 1000px;
     grid-column-gap: 40px;
     grid-row-gap: 10px;
-    margin: 5% 10% 5% 10%;
-    font-size: 17px;
+    margin: 5% 8% 5% 8%;
+    font-size: 19px;
+    
+
 }
 #descrip{
-    
+   
     grid-area: desc;
+    padding-top: 30px;
+    font-size: 21px;
 }
 
 
 #ubicacion{
-
+    
     grid-area: mapa;
 }
 
 #ir{    
     grid-area: ir;
+   
 }
 
 #objetivo{
     grid-area: obj;
-   
+    
 }
 
 #turismo{
+   
+    
     grid-area: turismo;
 }
 
+h1 {
+    color:#010B40;
+}
+h2{
+    color:#010B40;
+}
+h3{
+    color: #010B40;
+}
+
 #mapa{
-    height: 80%;
-    border-radius: 30px 30px 30px 30px;
+    height: 70%;
+   
+    width: 100%;
+} 
+
+
+
+/*CARRUSEL*/
+
+
+.img-carrusel{
+    width: 200%;
+    height: 100%;
+}
+
+#slider-box{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto 0;
+    overflow: hidden;
+    margin-top: 50px ;
+    justify-content: center;
+    grid-area: carrosa;
+    view-timeline-name: --image ;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+}
+#slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 10s infinite ease-in-out;
+}
+
+#slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+}
+#slider-box img{
     width: 100%;
 }
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+}
+
+
+
+
+/*FOTER*/
+
+footer{
+    background-color: #2175BF ;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+
+}
+
+.redes img{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.redes a{
+    text-decoration: none;
+    color: black;
+}
+
+#foot_grid-container{
+    display: grid;
+    background-color:transparent;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:  
+    'ig x menu'
+    'face dire menu'
+    'mail tele menu'
+    'telefon e menu';
+    height: 220px;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+
+    width: 100%;
+    align-items: center;
+/
+
+}
+
+#ig{
+    grid-area: ig;
+}
+#x{
+    grid-area: x;
+}
+#facebook{
+    grid-area: face;
+}
+#direccion{
+    grid-area: dire;
+}
+#mail{
+    grid-area: mail;
+}
+#telegram{
+    grid-area: tele;
+}
+#telefono{
+    grid-area: telefon;
+}
+#menu_footer{
+    grid-area: menu;
+}
+
+#menu_footer{
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+#menu_footer ul{
+    width: 100%;
+}
+#menu_footer ul li{
+    display:block;
+    width: 10%;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+#menu_footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.derechos{
+    background-color:#3B83D5;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 98.5%;
+    font-size: 15px;
+}
+#degrade{
+    height: 100px;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom,#5c84aa, #2175BF);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+ 
+    #grid-container{
+        width: 320px;
+        height: 2600px;
+        margin-left: 0;
+        margin: 5% 8% 5% 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'desc'
+        'mapa'
+        'ir'
+        'obj'
+        'turismo'
+        'carrosa';
+    }
+    #foot_grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+        grid-template-areas:
+        'ig'
+        'x'
+        'face'
+        'dire'
+        'mail'
+        'tele'
+        'telefon'
+        'menu';
+        height: 500px;
+        width: 320px;
+        
+
+    }
+
+    header{
+        width: auto;
+    }
+    .menu{
+        height: 200px;
+    }
+   
+    .menu ul li{
+        display: block;
+    }
+    .menu ul{
+        justify-self: center;
+    }
+    .imagen{
+        width: 700px;
+    }
+
+    .logo_titulo{
+        font-size: 9px;
+        width: 350px;
+    }
+    .logo_titulo img{
+        height: 100px;
+    }
+
+    .logo_titulo h2{
+        padding-left: 20px;
+    }
+
+    #ubicacion{
+        height: 300px;
+    }
+
+    #slider-box{
+        height: 200px
+    }
+
+    .derechos{
+        background-color:#3B83D5;
+        text-align: center;
+        
+        position: relative;
+        bottom: 0;
+        width: auto;
+        font-size: 15px;
+    }
+    
+  
+
+
+
+
+}
+
