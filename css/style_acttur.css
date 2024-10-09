@@ -4,6 +4,7 @@
 }
  body{
 /*     background-color: #2175BF  ; */
+line-height: 1.3;
 
 } 
 
@@ -45,6 +46,7 @@
 
 .menu ul{
     width: 100%;
+    justify-content: space-evenly;
 }
 .menu ul li{
     display: inline-block;
@@ -168,6 +170,7 @@
 }
 #slider-box img{
     width: 100%;
+    border-radius: 20px 20px 20px 20px;
 }
 
 #titulo_fotos{
@@ -190,14 +193,7 @@
     100% {margin-left: -300%;}
 }
 
-@media(max-width:991px){
-    body{
-        padding: 30px;
-    }
-    .slider-box{
-        width: 100%;
-    }
-}
+
 
 footer{
     background-color: #2175BF ;
@@ -233,11 +229,9 @@ footer{
     height: 220px;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-/*     margin: 10px 80% 5px 20% ; */
     width: 100%;
     align-items: center;
-/*     background-color:#3B83D5 ; */
-    background-color: #2175BF
+    background-color:#2175BF;
 
 }
 
@@ -285,9 +279,16 @@ footer{
 
 #menu_footer ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+#foot_grid-container p{
+    color: white;
 
+}
+#foot_grid-container p a{
+    color: white;
+
+}
 .derechos{
     background-color:#3B83D5;
     text-align: center;
@@ -317,28 +318,29 @@ footer{
         'telefon'
         'menu';
         height: 600px;
-        width: 710px;
+        width: /*320px*/auto;
 
     }
     #slider-box{
-        width: 700px;
-
+        width: 290px;
+        margin: 0;
     }
     header{
-        width: 710px;
+         width: auto; 
     }
     .menu{
         height: 150px;
     }
     #gradient{
-        width: 710px;
+        width: auto;
     }
     .derechos{
-        width: 690px;
+        width: auto;
     } 
     #grid-container{
-        width: 700px;
+        width: 280px;
         margin-left: 0;
+        height: 3500px;
     }
     .menu ul li{
         display: block;
@@ -347,7 +349,22 @@ footer{
         justify-self: center;
     }
     .imagen{
-        width: 700px;
+        width: 280px;
+    }
+    .logo_titulo{
+        justify-content: left;
+    }
+    .qPaginaes{
+        justify-content: left;
+
+    }
+
+    .logo_titulo img{
+        height: 100px;
+}
+    .logo_titulo h2{
+        padding-left: 0px;
+        width: 100px;
     }
 
 
