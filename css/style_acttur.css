@@ -229,11 +229,9 @@ footer{
     height: 220px;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-/*     margin: 10px 80% 5px 20% ; */
     width: 100%;
     align-items: center;
-/*     background-color:#3B83D5 ; */
-    background-color: #2175BF
+    background-color:#2175BF;
 
 }
 
